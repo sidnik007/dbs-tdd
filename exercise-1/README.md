@@ -1,1 +1,1 @@
-Get the test Running.
+Get the test running.
