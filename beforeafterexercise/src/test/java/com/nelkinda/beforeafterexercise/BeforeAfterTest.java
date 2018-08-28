@@ -13,35 +13,33 @@ public class BeforeAfterTest {
 	
 	private static List<String> sampleList;
 	
-	@BeforeClass
+	
 	public static void setup() {
 		sampleList = new ArrayList<String>();
 	}
 	
-	@Before
+	
 	public void init() {
 		sampleList.add("String1");
 	}
 	
-	@Test
+	
 	public void test1() {
 		System.out.println(sampleList.toString());
 	}
 	
-	@Test
+	
 	public void test2() {
 		System.out.println(sampleList.toString());
 	}
 	
-	@After
+	
 	public void finalize() {
 		sampleList.clear();
 	}
 	
-	@AfterClass
+	
 	public static void tearDown() {
 		
-	}
-	
-
+	}	
 }
